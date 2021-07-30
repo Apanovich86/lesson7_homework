@@ -74,39 +74,50 @@ function sleep() {
     }, Math.random() * 2000))
 }
 wakeUp().then((value) => {
-    console.log(value)
+    console.log(value);
+    return workout();
 })
-workout().then((value) => {
-    console.log(value)
+.then((value) => {
+    console.log(value);
+    return takeShower();
 })
-takeShower().then((value) => {
-    console.log(value)
+.then((value) => {
+    console.log(value);
+    return haveBreakfast();
 })
-haveBreakfast().then((value) => {
-    console.log(value)
+.then((value) => {
+    console.log(value);
+    return homework();
 })
-homework().then((value) => {
-    console.log(value)
+.then((value) => {
+    console.log(value);
+    return wayToWork();
 })
-wayToWork().then((value) => {
-    console.log(value)
+.then((value) => {
+    console.log(value);
+    return lunch();
 })
-lunch().then((value) => {
-    console.log(value)
+.then((value) => {
+    console.log(value);
+    return wayHome();
 })
-wayHome().then((value) => {
-    console.log(value)
+.then((value) => {
+    console.log(value);
+    return householdChores();
 })
-householdChores().then((value) => {
-    console.log(value)
+.then((value) => {
+    console.log(value);
+    return dinner();
 })
-dinner().then((value) => {
-    console.log(value)
+.then((value) => {
+    console.log(value);
+    return preparationForSleep();
 })
-preparationForSleep().then((value) => {
-    console.log(value)
+.then((value) => {
+    console.log(value);
+    return sleep();
 })
-wayHome().then((value) => {
+.then((value) => {
     console.log(value)
 })
 
